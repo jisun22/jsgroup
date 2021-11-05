@@ -4,6 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Nanum+Gothic+Coding&family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&family=Playfair+Display:wght@400;700&family=Ubuntu:wght@500&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Nanum+Gothic+Coding&family=Patrick+Hand&family=Source+Sans+Pro&display=swap');
 
 * {
@@ -69,29 +71,38 @@ body{
     transition-timing-function:ease;
 }
 
-#header .header-nav{
-    overflow: hidden;
-}
 
-#header .header-nav .header-logo a{
+#header .header-nav .header-logo {
+    width: 300px;
     position: absolute;
-    float: left;
-    left: 10px;
-    top: 10px;
+    top: 30px;
 }
 
-#header .main-menu .header-menu li a{
-    position: relative;
-    float: right;
-    right: 150px;
-    font-size: 18px;
-    padding: 20px 20px 20px 20px;
-    color: white;
+.header-menu ul {
     text-align: center;
-    height: 100%;  
+    margin-top: 50px;
 }
 
-#header .main-menu .header-menu li a:hover{
+.header-menu li {
+    display: inline-block;
+}
+
+.header-menu li a{
+    font-size: 18px;
+    padding: 50px 30px 20px 20px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#header .header-img {
+    width: 20px;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+}
+
+
+.header-menu li a:hover{
     color:#B5DDEE;
 }
 
@@ -106,15 +117,9 @@ body{
 
 #footer .footer-txt{
     display: flex;
-    margin-left: 80px;
     width: 1600px;
     margin: 0 auto;
-    overflow: hidden;
     padding: 60px 0 50px 0;
-}
-
-#footer .footer-txt div p{
-    column-count:1
 }
 
 

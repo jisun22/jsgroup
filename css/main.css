@@ -1,0 +1,210 @@
+@charset "UTF-8";
+/* 초기화 */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Nanum+Gothic+Coding&family=Patrick+Hand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+#companies .companies-text{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+    margin-top: 40px;
+}
+
+#companies .companies-frame{
+    display: flex;
+    width: 1600px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+#companies .companies-frame .companies-img {
+    background: burlywood;
+    flex: 1;
+    margin: 0 1px;
+    height: 450px;
+}
+
+#companies .companies-frame .companies-img.wide {
+    background: url('../images/wide.jpeg');
+    background-size: contain;
+}
+#companies .companies-frame .companies-img.rise {
+    background: url('../images/rise.jpeg');
+    background-size: cover;
+}
+#companies .companies-frame .companies-img.media {
+    background: url('../images/media.jpeg');
+    background-size: cover;
+}
+#companies .companies-frame .companies-img.tv {
+    background: url('../images/tv.jpeg');
+    background-size: cover;
+}
+#companies .companies-frame .companies-img.park {
+    background: url('../images/park.jpeg');
+    background-size: cover;
+}
+
+#companies .companies-frame .frame-txt p{
+    text-align: center;
+    color: white;
+    line-height: 3;
+    margin-top: 300px;
+}
+
+#companies .companies-frame p {
+    font-weight: 700;
+    text-align: center;
+    color: white;
+}
+#companies .companies-frame .font p {
+    font-size: 40px;
+}
+
+#latest-news{
+    width: 910px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#latest-news .news-text p{
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+    margin-top: 80px;
+}
+
+
+#latest-news .news-frame .news-img {
+    float: left;
+    margin: 0 6px;
+    margin-top: 50px;
+}
+
+#latest-news .news-txt{
+    overflow: hidden;
+}
+#latest-news .news-txt .news-menu li{
+    float: left;
+    margin: 0 10px;
+    margin-top: 50px;
+}
+
+.news-img p{
+    font-size: 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.news-txt .news-menu li a:hover{
+    color:#B5DDEE;
+}
+
+#youtube{
+    background: url('../images/js.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+
+
+.youtube-slide .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.youtube-slide .swiper-slide {
+    margin-top: 250px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+#youtube{
+    overflow: hidden;
+}
+
+#youtube .youtube-text{
+    background-color:rgb(68, 103, 177);
+    width:474px;
+    height: 316px;
+    margin-top: 50px;
+}
+
+#youtube .youtube-text p{
+    color: white;
+}
+
+#recruit{
+    width: 910px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#recruit .recruit-text{
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+    margin-top: 80px;
+}
+
+
+
+
+#contact .contact-img {
+    background: url('../images/contact.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    margin-top: 80px;
+}
+
+#contact button {
+    align-items: center;
+    display: inline-block;
+    float: right;
+    margin-right: 550px;
+    padding: 15px 40px;
+    border: 3px solid #ffffff;
+    background: #00000000 ;
+    color: #ffffff;
+    text-align: center; 
+    margin-top: 180px;
+}
+
+#contact button:hover {
+    background-color:#ffffff;
+    color:rgb(0, 0, 0);
+}
+
+
+
+/* PC (해상도 1024px)*/
+
+@media all and (min-width:1024px) and (max-width:1480px) {
+    
+}
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {
+    
+}
+
+/* 모바일 가로, 모바일 세로 (해상도 ~ 767px)*/
+@media all and (max-width:767px) {
+    
+    
+}

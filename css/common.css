@@ -1,0 +1,178 @@
+                                               @charset "UTF-8";
+/* 초기화 */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Nanum+Gothic+Coding&family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Nanum+Gothic+Coding&family=Patrick+Hand&family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0; padding: 0;
+}
+a { text-decoration: none !important; color: black;}
+img { border: 0; }
+ul { list-style: none; }
+
+html{font-size: 20px}
+
+body{
+    margin: 0;
+    font-family: 'PT Sans Narrow';
+    font-size: 1rem;
+    background-color: rgb(255, 255, 255);
+}
+
+
+#header .swiper-container {
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+#header .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+#header > .header-nav {
+    height: 120px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99999999;
+    background-color:rgba(255, 255, 255, 0.1);
+    -webkit-transition-duration:0.4s;
+    -webkit-transition-timing-function:ease;
+    transition-duration:0.4s;
+    transition-timing-function:ease;
+}
+
+.down {
+    background-color:rgba(0,0,0,.8);
+    -webkit-transition-duration:0.4s;
+    -webkit-transition-timing-function:ease;
+    transition-duration:0.4s;
+    transition-timing-function:ease;
+}
+
+#header .header-nav{
+    overflow: hidden;
+}
+
+#header .header-nav .header-logo a{
+    position: absolute;
+    float: left;
+    left: 10px;
+    top: 10px;
+}
+
+#header .main-menu .header-menu li a{
+    position: relative;
+    float: right;
+    right: 150px;
+    font-size: 18px;
+    padding: 20px 20px 20px 20px;
+    color: white;
+    text-align: center;
+    height: 100%;  
+}
+
+#header .main-menu .header-menu li a:hover{
+    color:#B5DDEE;
+}
+
+
+/* 푸터 */
+
+#footer{
+    margin-top: 60px;
+    overflow: hidden;
+    background: rgba(164, 162, 162, 0.5);
+}
+
+#footer .footer-txt{
+    display: flex;
+    margin-left: 80px;
+    width: 1600px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 60px 0 50px 0;
+}
+
+#footer .footer-txt div p{
+    column-count:1
+}
+
+
+
+#footer .footer-txt .sns{
+    overflow: hidden;
+    margin-left: 580px;
+    margin-top: 80px;
+}
+
+#footer .footer-txt .sns a img{
+    float: right;
+    width: 80px;
+}
+#footer .footer-txt .sns a img:hover{
+    background: rgb(167, 198, 226);
+    border-radius: 50%;
+    /* opacity: 60%; */
+}
+
+#footer .footer-txt h5{
+    font-style: Bold;
+    Font-size: 18px;
+    font-family: PT Sans;
+    color: rgb(121, 178, 204)
+}
+
+
+#footer .footer-txt div p{
+    line-height: 40px;
+    font-size: 17px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#footer .footer-txt div a p{
+    line-height: 40px;
+    font-size: 17px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#footer .footer-txt div a p:hover{
+    color: rgb(60, 132, 168)
+}
+
+
+@media all and (min-width:1024px) and (max-width:1200px) {
+    
+
+}
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {
+    
+
+}
+
+/* 모바일 가로, 모바일 세로 (해상도 ~ 767px)*/
+@media all and (max-width:767px) {
+  
+}
+

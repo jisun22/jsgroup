@@ -20,9 +20,23 @@
             </a> 
         </div>
         <div class="header-menu">
-            <ul> 
-                <li><a href="#">ABOUT US</a></li>
-                <li><a href="#">COMPANY</a></li>
+            <ul id="num"> 
+                <li><a href="#">ABOUT US</a>
+                    <ul class="sub">
+                        <li><a href="#">Our story</a></li>
+                        <li><a href="#">Our history</a></li>
+                        <li><a href="#">CI</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">COMPANY</a>
+                    <ul class="sub">
+                        <li><a href="#">JS WIDE</a></li>
+                        <li><a href="#">JS RISE</a></li>
+                        <li><a href="#">JS MEDIA</a></li>
+                        <li><a href="#">JS TV</a></li>
+                        <li><a href="#">JS PARK</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">NEWS</a></li>
                 <li><a href="#">RECRUIT</a></li>
                 <li><a href="#">CONTACT</a></li>
@@ -32,7 +46,7 @@
             </div>
         </div>
     </nav>
-    <div class="swiper-container">
+    <div class="swiper-container swiper-head">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <img src="./images/header-screen.jpg" alt="헤더슬라이드">
@@ -149,42 +163,46 @@
 </section>
 <section id="youtube">
     <div class="youtube-text">
-        <div class="you-txt">
         <p>YOUTUBE</p>
-        </div>
+        <br/>
         <p>JS 그룹의 다양한 영상콘텐츠를 즐기세요.</p>
-        <li class="youtube-button">
-            <a href="#"></a>
-            <a href="#"></a>
-        </li>
+        <div class="youtube-button">
+            <!-- <a href="#"></a>
+            <a href="#"></a> -->
+            <button id="test_prev_youtube"><img src="./images/arrow_left.png" alt="화살표왼쪽"></button>
+            <button id="test_next_youtube"><img src="./images/arrow_right.png" alt="화살표오른쪽"></button>
+        </div>
     </div>
-    <div class="youtube-slide">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <a href="#"><img src="./images/tube-ru2.png" alt="유튜브"></a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#"><img src="./images/tube-lee.png" alt="유튜브2"></a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#"><img src="./images/tube-bo.png" alt="유튜브3"></a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#"><img src="./images/tube-jo.png" alt="유튜브4"></a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#"><img src="./images/tube-ru.png" alt="유튜브5"></a>
-                </div>
+    <div class="swiper-container swiper-content">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="#"><img src="./images/tube-ru2.png" alt="유튜브"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img src="./images/tube-lee.png" alt="유튜브2"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img src="./images/tube-bo.png" alt="유튜브3"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img src="./images/tube-jo.png" alt="유튜브4"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img src="./images/tube-ru.png" alt="유튜브5"></a>
             </div>
         </div>
+    </div>
     </div>
 </section>
 <section id="recruit">
     <div class="recruit-text">
         <p>Recruit</p>
     </div>
-    <div class="swiper-container">
+    <div id="test_btn">
+        <button id="test_prev"><img src="./images/arrow_left.png" alt="화살표왼쪽"></button>
+        <button id="test_next"><img src="./images/arrow_right.png" alt="화살표오른쪽"></button>
+    </div>
+    <div class="swiper-container swiper-recruit">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="header_slide">
@@ -196,9 +214,9 @@
                     <a href="#"><img src="./images/recruit2.jpg" alt="채용2"></a>
                 </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
         </div>
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
     </div>
 </section>
 <section id="contact">
@@ -263,9 +281,9 @@
         </div>
     </div>
 </footer>
-<script src="js/jquery-3.6.0.min.js"></script>
-<script src="library/swiper/swiper.min.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/main.js"></script>
+<script src="./js/jquery-3.6.0.min.js"></script>
+<script src="./library/swiper/swiper.min.js"></script>
+<script src="./js/wow.min.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>

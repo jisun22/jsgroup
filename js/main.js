@@ -16,14 +16,30 @@ $(function(){
     });
   });
 
+// 헤더 서브메뉴 드롭다운
+// $("#num1").hover(function(){
+//     $(this).children('sub').stop().slideToggle(500);
+// });
+
+// $("#num2").hover(function(){
+//   $(this).children('sub').stop().slideToggle(500);
+// });
+
+$(document).ready(function(){
+  $("#num>li").mouseover(function(){
+      $(this).children(".sub").stop().slideDown(200);
+  });
+  $("#num>li").mouseleave(function(){
+      $(this).children(".sub").stop().slideUp(200);
+  });
+});
+
+
+
 
 
   // 헤더 슬라이드
-var swiper = new Swiper('#header .swiper-container', {
-    pagination: {
-        el: '.swiper-pagination',
-	    loop : true
-    },
+var swiperHeader = new Swiper('.swiper-head', {
     mousewheel: false,
     keyboard: false,
     slidesPerView: 1,
@@ -32,36 +48,47 @@ var swiper = new Swiper('#header .swiper-container', {
     },
     speed: 3000,
     effect : 'fade'
-    
 });
 
-var swiper = new Swiper('.youtube-slide .swiper-container', {
+var swiperContent = new Swiper('.swiper-content', {
     slidesPerView: 4,
-    spaceBetween: 30,
+    spaceBetween: 10,
     centeredSlides: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
+    // pagination: {
+    //   el: '.swiper-pagination',
+    //   clickable: true,
+    // },
     // effect:'coverflow'
-  });
+});
+
+$('#test_prev_youtube').click(function(){
+  swiperContent.slidePrev();
+});
+
+$('#test_next_youtube').click(function(){
+  swiperContent.slideNext();
+});
 
 
-var swiper = new Swiper('#recruit .swiper-container', {
-    pagination: {
-        el: '.swiper-pagination',
-	    loop : true
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+
+var swiperRecruit = new Swiper('.swiper-recruit', {
     mousewheel: false,
     keyboard: false,
-    slidesPerView: 1,
     autoplay: {
         delay: 3000,
     },
-    speed: 4000,
-    
+    speed: 4000
 });
+
+
+$('#test_prev').click(function(){
+  swiperRecruit.slidePrev();
+});
+
+$('#test_next').click(function(){
+  swiperRecruit.slideNext();
+});
+
+
+
+

@@ -102,10 +102,29 @@ body{
 }
 
 
-.header-menu li a:hover{
+.header-menu:hover{
     color:#B5DDEE;
 }
 
+
+#num>li a:hover {
+    color: rgb(120, 186, 224);
+}
+
+.sub {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background: #eee;
+    opacity: 0.8;
+}
+
+.sub>li:last-child {
+    border: 0;
+}
 
 /* 푸터 */
 

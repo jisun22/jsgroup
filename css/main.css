@@ -66,6 +66,8 @@
     font-size: 40px;
 }
 
+
+
 #latest-news{
     width: 910px;
     margin: 0 auto;
@@ -95,6 +97,11 @@
     margin-top: 50px;
 }
 
+.news-img img:hover {
+    transform: scale( 1.1, 1.1 );
+    filter: brightness(70%); ;
+}
+
 .news-img p{
     font-size: 15px;
     font-family: 'Noto Sans KR', sans-serif;
@@ -102,6 +109,7 @@
 
 .news-txt .news-menu li a:hover{
     color:#B5DDEE;
+    font-size: 20px;
 }
 
 #youtube{
@@ -109,16 +117,64 @@
     background-size: cover;
     width: 100%;
     height: 700px;
+    position: relative;
 }
 
+#youtube .youtube-text{
+    position: absolute;
+    background-color:rgb(68, 103, 177);
+    top: 220px;
+    width:474px;
+    height: 356px;
+    margin-top: 50px;
+}
+
+#youtube .youtube-text p{
+    position: absolute;
+    top: 80px;
+    color: white;
+}
+
+
+
+.youtube-button{
+    position: relative;
+}
+
+#test_prev_youtube{
+    position: absolute;
+    top: 180px;
+    left: 150px;
+    border-radius: 50%;
+    background-color: rgb(170, 168, 168);
+}
+
+#test_next_youtube{
+    position: absolute;
+    top: 180px;
+    left: 230px;
+    border-radius: 50%;
+    background-color: rgb(170, 168, 168);
+}
+
+#test_prev_youtube:hover{
+    color: rgb(107, 106, 106);
+}
+
+#test_next_youtube:hover{
+    color: rgb(107, 106, 106);
+}
 
 .youtube-slide .swiper-container {
     width: 100%;
     height: 100%;
 }
-.youtube-slide .swiper-slide {
-    margin-top: 250px;
-    /* Center slide text vertically */
+
+/* .swiper-content .swiper-slide{
+    position: relative;
+} */
+.swiper-content .swiper-wrapper .swiper-slide {
+    margin-top: 310px;   
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -137,17 +193,6 @@
     overflow: hidden;
 }
 
-#youtube .youtube-text{
-    background-color:rgb(68, 103, 177);
-    width:474px;
-    height: 316px;
-    margin-top: 50px;
-}
-
-#youtube .youtube-text p{
-    color: white;
-}
-
 #recruit{
     width: 910px;
     margin: 0 auto;
@@ -162,6 +207,23 @@
 }
 
 
+#test_prev{
+    border-radius: 50%;
+    background-color: rgb(170, 168, 168);
+}
+
+#test_next{
+    border-radius: 50%;
+    background-color: rgb(170, 168, 168);
+}
+
+#test_prev:hover{
+    color: rgb(107, 106, 106);
+}
+
+#test_next:hover{
+    color: rgb(107, 106, 106);
+}
 
 
 #contact .contact-img {

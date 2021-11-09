@@ -117,22 +117,36 @@
     background-size: cover;
     width: 100%;
     height: 700px;
-    position: relative;
-}
-
-#youtube .youtube-text{
-    position: absolute;
-    background-color:rgb(68, 103, 177);
-    top: 220px;
-    width:474px;
-    height: 356px;
+    /* position: relative; */
+    /* display: flex; */
+    overflow: hidden;
     margin-top: 50px;
 }
 
+#youtube .youtube-text{
+    /* position: absolute; */
+    background-color:rgb(68, 103, 177);
+    /* top: 220px; */
+    width:474px;
+    height: 300px;
+    float: left;
+    margin-top: 290px;
+    /* flex: 2; */
+    /* flex-basis: 474px; */
+}
+
 #youtube .youtube-text p{
-    position: absolute;
-    top: 80px;
+    /* position: absolute;
+    top: 80px; */
     color: white;
+}
+
+#youtube .youtube-slide {
+    /* flex: 8; */
+    /* flex-basis: 700px; */
+    width: 1429px;
+    margin-top: 300px;
+    float: left;
 }
 
 
@@ -141,7 +155,7 @@
     position: relative;
 }
 
-#test_prev_youtube{
+/* #test_prev_youtube{
     position: absolute;
     top: 180px;
     left: 150px;
@@ -155,7 +169,7 @@
     left: 230px;
     border-radius: 50%;
     background-color: rgb(170, 168, 168);
-}
+} */
 
 #test_prev_youtube:hover{
     color: rgb(107, 106, 106);
@@ -174,7 +188,7 @@
     position: relative;
 } */
 .swiper-content .swiper-wrapper .swiper-slide {
-    margin-top: 310px;   
+    /* margin-top: 310px;    */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -187,6 +201,11 @@
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+}
+
+
+.swiper-content .swiper-wrapper .swiper-slide.first {
+    margin-left: 100px;
 }
 
 #youtube{
@@ -206,6 +225,23 @@
     margin-top: 80px;
 }
 
+#test_prev_youtube{
+    border-radius: 50%;
+    background-color: rgb(216, 213, 213);
+}
+#test_next_youtube{
+    border-radius: 50%;
+    background-color: rgb(216, 213, 213);
+}
+
+#test_prev_youtube:hover{
+    color: rgb(107, 106, 106);
+    cursor: pointer;
+}
+#test_next_youtube:hover{
+    color: rgb(107, 106, 106);
+    cursor: pointer;
+}
 
 #test_prev{
     border-radius: 50%;
@@ -219,10 +255,12 @@
 
 #test_prev:hover{
     color: rgb(107, 106, 106);
+    cursor: pointer;
 }
 
 #test_next:hover{
     color: rgb(107, 106, 106);
+    cursor: pointer;
 }
 
 

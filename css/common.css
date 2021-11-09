@@ -30,11 +30,13 @@ body{
     height: 100%;
     top: 0;
 }
-#header .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
 
+.swiper-head-moile  {
+    position: absolute;
+    display: none;
+}
+
+#header .swiper-slide {
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -50,7 +52,7 @@ body{
     align-items: center;
 }
 
-#header > .header-nav {
+.header-nav {
     height: 120px;
     position: fixed;
     width: 100%;
@@ -76,6 +78,10 @@ body{
     width: 300px;
     position: absolute;
     top: 30px;
+}
+
+#header .header-nav .header-logo img {
+    width: 200px;
 }
 
 .header-menu ul {
@@ -124,6 +130,15 @@ body{
 
 .sub>li:last-child {
     border: 0;
+}
+
+.toggleBtn{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: white;
+    font-size: 40px;
+    display: none;
 }
 
 /* 푸터 */
@@ -185,18 +200,108 @@ body{
 
 
 @media all and (min-width:1024px) and (max-width:1200px) {
-    
-
+    .toggleBtn{
+        position: absolute;;
+        display: none;
+    }
 }
 
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
 @media all and (min-width:768px) and (max-width:1023px) {
-    
+    #header .header-nav .header-logo img {
+        width: 150px;
+    }
+
+    .header-menu li a{
+        font-size: 15px;
+        padding: 50px 30px 40px 10px;
+        color: white;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    .toggleBtn{
+        position: absolute;;
+        display: none;
+    }
 
 }
 
 /* 모바일 가로, 모바일 세로 (해상도 ~ 767px)*/
 @media all and (max-width:767px) {
-  
+    .header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .header-nav{
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: black;
+        width: 100%;
+    }
+    .down {
+        background-color:rgba(0, 0, 0, 0.8);
+        -webkit-transition-duration:0.4s;
+        -webkit-transition-timing-function:ease;
+        transition-duration:0.4s;
+        transition-timing-function:ease;
+    }
+    #num{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    #num li{
+        padding: 5px 15px;
+    }
+
+
+    .header-menu li{
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+
+    #header .header-nav .header-logo img {
+        width: 150px;
+    }
+
+    .toggleBtn{
+        margin-top: 10px;
+        display: block;
+        float: right;
+    }
+
+    #header .header-img{
+        display: none;
+    }
+
+    #header .swiper-container {
+        position: absolute;
+        display: none;
+    }
+    
+
+    .swiper-head-moile {
+        width: 100%;
+        height: 100%;
+        top: 0;
+    }
+    
+    .swiper-container.swiper-head-moile {
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
 }
 

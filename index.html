@@ -44,6 +44,9 @@
             <div class="header-img">
                 <a href="#"><i class="fas fa-search" style="color: white;"></i></a>
             </div>
+            <div class="toggleBtn">
+                <a href="#"><i class="fas fa-bars" style="color: white;"></i></a>
+            </div>
         </div>
     </nav>
     <div class="swiper-container swiper-head">
@@ -59,6 +62,19 @@
             </div>
         </div>
     </div>  
+    <div class="swiper-container swiper-head-moile">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./images/header-screen-mobile.jpg" alt="헤더모바일슬라이드">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/header-screen-mobile2.jpg" alt="헤더모바일슬라이드2">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/header-screen-mobile3.jpg" alt="헤더모바일슬라이드3">
+            </div>
+        </div>
+    </div> 
 </header>
 <section id="companies">
     <div class="companies-text">
@@ -169,26 +185,32 @@
         <div class="youtube-button">
             <!-- <a href="#"></a>
             <a href="#"></a> -->
-            <button id="test_prev_youtube"><img src="./images/arrow_left.png" alt="화살표왼쪽"></button>
-            <button id="test_next_youtube"><img src="./images/arrow_right.png" alt="화살표오른쪽"></button>
+            <!-- <button id="test_prev_youtube"><img src="./images/arrow_left.png" alt="화살표왼쪽"></button> -->
+            <img id="test_prev_youtube" src="./images/arrow_left.png" alt="화살표왼쪽">
+            <!-- <button id="test_prev_youtube">prev</button> -->
+            <!-- <button id="test_next_youtube"><img src="./images/arrow_right.png" alt="화살표오른쪽"></button> -->
+            <img id="test_next_youtube" src="./images/arrow_right.png" alt="화살표오른쪽">
+            <!-- <button id="test_next_youtube">next</button> -->
         </div>
     </div>
-    <div class="swiper-container swiper-content">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <a href="#"><img src="./images/tube-ru2.png" alt="유튜브"></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="./images/tube-lee.png" alt="유튜브2"></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="./images/tube-bo.png" alt="유튜브3"></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="./images/tube-jo.png" alt="유튜브4"></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="./images/tube-ru.png" alt="유튜브5"></a>
+    <div div class="youtube-slide">
+        <div class="swiper-container swiper-content">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide first">
+                    <a href="#"><img src="./images/tube-ru2.png" alt="유튜브"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="./images/tube-lee.png" alt="유튜브2"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="./images/tube-bo.png" alt="유튜브3"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="./images/tube-jo.png" alt="유튜브4"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="./images/tube-ru.png" alt="유튜브5"></a>
+                </div>
             </div>
         </div>
     </div>
@@ -198,25 +220,29 @@
     <div class="recruit-text">
         <p>Recruit</p>
     </div>
-    <div id="test_btn">
-        <button id="test_prev"><img src="./images/arrow_left.png" alt="화살표왼쪽"></button>
-        <button id="test_next"><img src="./images/arrow_right.png" alt="화살표오른쪽"></button>
+    <div id="test_btn1">
+        <img id="test_prev" src="./images/arrow_left.png" alt="화살표왼쪽">
     </div>
-    <div class="swiper-container swiper-recruit">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="header_slide">
-                    <a href="#"><img src="./images/recruit.jpg" alt="채용"></a>
+    <div>
+        <div class="swiper-container swiper-recruit">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="header_slide">
+                        <a href="#"><img src="./images/recruit.jpg" alt="채용"></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="header_slide">
+                        <a href="#"><img src="./images/recruit2.jpg" alt="채용2"></a>
+                    </div>
                 </div>
             </div>
-            <div class="swiper-slide">
-                <div class="header_slide">
-                    <a href="#"><img src="./images/recruit2.jpg" alt="채용2"></a>
-                </div>
-            </div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
         </div>
-        <!-- <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div> -->
+    </div>
+    <div id="test_btn2">
+        <img id="test_next" src="./images/arrow_right.png" alt="화살표오른쪽">
     </div>
 </section>
 <section id="contact">

@@ -19,11 +19,11 @@ $(function(){
 // 헤더 서브메뉴 드롭다운
 
 $(document).ready(function(){
-  $("#num>li").mouseover(function(){
-      $(this).children(".sub").stop().slideDown(200);
+  $("#num > li").mouseover(function(){
+      $(this).children(".sub").stop().slideDown(350);
   });
-  $("#num>li").mouseleave(function(){
-      $(this).children(".sub").stop().slideUp(200);
+  $("#num > li").mouseleave(function(){
+      $(this).children(".sub").stop().slideUp(350);
   });
 });
 
@@ -56,7 +56,7 @@ var swiperHeader = new Swiper('.swiper-head-mobile', {
 
 var swiperContent = new Swiper('.swiper-content', {
     slidesPerView: 3,
-    spaceBetween: 50,
+    spaceBetween: 5,
     // centeredSlides: true,
     // pagination: {
     //   el: '.swiper-pagination',
@@ -65,11 +65,11 @@ var swiperContent = new Swiper('.swiper-content', {
     // effect:'coverflow'
 });
 
-$('#test_prev_youtube').click(function(){
+$('#prev_youtube').click(function(){
   swiperContent.slidePrev();
 });
 
-$('#test_next_youtube').click(function(){
+$('#next_youtube').click(function(){
   swiperContent.slideNext();
 });
 
@@ -81,15 +81,15 @@ var swiperRecruit = new Swiper('.swiper-recruit', {
     autoplay: {
         delay: 3000,
     },
-    speed: 4000
+    speed: 2500
 });
 
 
-$('#test_prev').click(function(){
+$('#recruit_prev').click(function(){
   swiperRecruit.slidePrev();
 });
 
-$('#test_next').click(function(){
+$('#recruit_next').click(function(){
   swiperRecruit.slideNext();
 });
 

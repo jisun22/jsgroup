@@ -2,7 +2,7 @@
 
 $(function(){
   var $header = $('.header-nav'); //헤더를 변수에 넣기
-  var $page = $('.companies-text'); //색상이 변할 부분
+  var $page = $('.block'); //색상이 변할 부분
   var $window = $(window);
   var pageOffsetTop = $page.offset().top;//색상 변할 부분의 top값 구하기
   
@@ -25,6 +25,7 @@ $(document).ready(function(){
   $("#num > li").mouseleave(function(){
       $(this).children(".sub").stop().slideUp(350);
   });
+  // speed: 2500
 });
 
 
@@ -54,9 +55,38 @@ var swiperHeader = new Swiper('.swiper-head-mobile', {
   effect : 'fade'
 });
 
+// companies 
+// $(".companies-img").mouseleave(
+//   function () {
+//     $(this).removeClass("companies-img");
+//   }
+// );
+
+$(document).ready(function() {
+  /* 1 */
+  $(window).scroll( function(){
+      /* 2 */
+      $('img').each( function(i){
+          var bottom_of_element = $(this).offset().top + $(this).outerHeight() / 5;
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+          /* 3 */
+          if( bottom_of_window > bottom_of_element ){
+              $(this).animate({'opacity':'1'},700);
+          }
+      }); 
+  });
+});
+
+
+
+
+
 var swiperContent = new Swiper('.swiper-content', {
     slidesPerView: 3,
     spaceBetween: 5,
+    autoplay: {
+      delay: 3000
+  },
     // centeredSlides: true,
     // pagination: {
     //   el: '.swiper-pagination',
@@ -102,3 +132,5 @@ toggleBtn.addEventListener('click', () => {
     menu.classList.toggle('active');
     links.classList.toggle('active');
 })
+
+

@@ -145,7 +145,7 @@ body{
 }
 
 .sub > li > a:hover {
-    color: rgb(72, 126, 187);
+    color: rgb(54, 179, 251);
 }
 
 .sub {
@@ -155,15 +155,17 @@ body{
     width: 140px;
     background: rgb(255, 255, 255);
     opacity: 0.8;
+    /* transition: height .4s;
+    -webkit-transition: height .2s; 
+    -moz-transition: height .2s; */
+    
 }
 
 .sub li a{
-    color: rgb(192, 187, 187);
+    color: rgb(105, 101, 101);
     font-size: 13px;
-}
-
-.sub>li:last-child {
-    /* border: 0; */
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .toggleBtn{
@@ -281,6 +283,11 @@ body{
         flex-direction: column;
         align-items: flex-start;
     }
+
+    .header-menu #num > li > a{
+        position: absolute;
+        display: none;
+    }
     
     .header-nav{
         flex-direction: column;
@@ -311,6 +318,12 @@ body{
         display: none;
     }
 
+    #header .swiper-container {
+        max-width: 100%;
+        height: auto;
+        top: 0;
+    }
+
     #header .header-nav .header-logo img {
         width: 150px;
     }
@@ -324,18 +337,23 @@ body{
     #header .header-img{
         display: none;
     }
-
-    #header .swiper-container {
+    
+    #header > .swiper-container .swiper-head{
         position: absolute;
         display: none;
     }
+    /* #header > .swiper-container > .swiper-head-moile {
+        position: absolute;
+        display: none;
+        width: 100%;
+    } */
     
 
-    .swiper-head-moile {
+    /* .swiper-head-moile {
         width: 100%;
         height: 100%;
         top: 0;
-    }
+    } */
     
     .swiper-container.swiper-head-moile {
         /* Center slide text vertically */
@@ -353,5 +371,75 @@ body{
         align-items: center;
     }
 
+    /* 푸터 */
+    #footer .footer-txt{
+        height: 600px;
+    }
+    
+    #footer-txt-all{
+        position: relative;
+        overflow: hidden;
+        top: 50px;
+        left: 70px;
+        font-weight: lighter;
+    }
+
+    #footer .footer-txt div p{
+        line-height: 30px;
+        font-size: 14px;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    #footer .footer-txt div a p{
+        line-height: 30px;
+        font-size: 14px;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    #footer-txt-all .office{
+        position: absolute;
+        float: left;
+        margin-left: 10px;
+        width: 650px;
+    }
+
+    #footer-txt-all .menu{
+        position: absolute;
+        float: left;
+        margin-left: 10px;
+        width: 650px;
+        margin-top: 180px;
+    }
+    
+    #footer-txt-all .family{
+        position: absolute;
+        float: left;
+        left: 150px;
+        margin-left: 10px;
+        width: 650px;
+        margin-top: 180px;
+    }
+    
+    #footer-txt-all .career{
+        position: absolute;
+        float: left;
+        left:250px;
+        margin-left: 10px;
+        width: 650px;
+        margin-top: 180px;
+    }
+    
+    
+    #footer .footer-txt .sns{
+        float: left;
+        margin-left: 10px;
+        width: 650px;
+        margin-top: 450px;
+    }
+    
+    #footer .footer-txt .sns a img{
+        float: left;
+        width: 50px;
+    }
 }
 

@@ -76,16 +76,38 @@ transition: .4s;
     transition: .4s;
     }
 
-#companies .companies-frame .frame-txt p{
+#companies .companies-frame .frame-txt  p{
     text-align: center;
     color: white;
-    line-height: 3;
-    margin-top: 300px;
+    line-height: 2;
+    margin-top: 280px;
+    font-size: 25px;
 }
 
-#companies .companies-frame p:hover{
+.companies-frame .companies-img p:hover{
     background: url('../images/companies-text-back.png');
 }
+
+
+
+.companies-frame:hover::before {
+        box-shadow: 10px 20px 60px rgba(0, 0, 10, .2);
+}
+
+.companies-frame .companies-img p::after {
+        position: relative;
+        display: inline-block;
+        content: attr(data-title);
+        transition: transform .2s ease; 
+        font-weight: bold;
+        letter-spacing: .01em;
+        will-change: transform;
+        transform:
+        translateY(var(--ty, 0))
+        rotateX(var(--rx, 0))
+        rotateY(var(--ry, 0));
+}
+
 
 #companies .companies-frame p {
     font-weight: 700;
@@ -95,6 +117,8 @@ transition: .4s;
 #companies .companies-frame .font p {
     font-size: 40px;
 }
+
+
 
 
 

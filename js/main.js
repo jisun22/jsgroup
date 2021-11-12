@@ -44,7 +44,19 @@ var swiperHeader = new Swiper('.swiper-head', {
     effect : 'fade'
 });
 // 헤더 슬라이드 모바일
-var swiperHeader = new Swiper('.swiper-head-mobile', {
+var swiperHeader = new Swiper('.swiper-head-mob', {
+  mousewheel: false,
+  keyboard: false,
+  slidesPerView: 1,
+  autoplay: {
+      delay: 3000,
+  },
+  speed: 3000,
+  effect : 'fade'
+});
+
+// 헤더 슬라이드 tablet
+var swiperHeader = new Swiper('.swiper-head-tab', {
   mousewheel: false,
   keyboard: false,
   slidesPerView: 1,

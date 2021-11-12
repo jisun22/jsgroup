@@ -31,7 +31,11 @@ body{
     top: 0;
 }
 
-.swiper-head-moile  {
+.swiper-head-mob  {
+    position: absolute;
+    display: none;
+}
+.swiper-head-tab {
     position: absolute;
     display: none;
 }
@@ -250,12 +254,181 @@ body{
     color: rgb(60, 132, 168)
 }
 
+/*미디어  */
+
+@media all and (min-width:1201px) and (max-width:1732px) {
+    #footer .footer-txt{
+        height: 600px;
+    }
+    
+    #footer-txt-all{
+        position: relative;
+        overflow: hidden;
+        top: 50px;
+        left: 150px;
+        font-weight: lighter;
+    }
+
+    #footer .footer-txt div p{
+        line-height: 35px;
+        font-size: 18px;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    #footer .footer-txt div a p{
+        line-height: 40px;
+        font-size: 18px;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    #footer-txt-all .office{
+        position: absolute;
+        float: left;
+        margin-left: 90px;
+        width: 450px;
+    }
+
+    #footer-txt-all .menu{
+        position: absolute;
+        float: left;
+        margin-left: 90px;
+        width: 140px;
+        margin-top: 180px;
+    }
+    
+    #footer-txt-all .family{
+        position: absolute;
+        float: left;
+        left: 150px;
+        margin-left: 110px;
+        width: 80px;
+        margin-top: 180px;
+    }
+    
+    #footer-txt-all .career{
+        position: absolute;
+        float: left;
+        left:250px;
+        margin-left: 130px;
+        width:80px;
+        margin-top: 180px;
+    }
+    
+    
+    #footer .footer-txt .sns{
+        margin-right: 0px;
+        width: 350px;
+        margin-top: 350px;
+    }
+    
+    #footer .footer-txt .sns a img{
+        float: right;
+        width: 70px;
+    }
+}
+
+
 
 @media all and (min-width:1024px) and (max-width:1200px) {
-    .toggleBtn{
-        position: absolute;;
+    .swiper-container.swiper-head-tab {
+        width: 100%;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .swiper-container.swiper-head-mob{
+        position: absolute;
         display: none;
     }
+    .swiper-head > .swiper-wrapper > .swiper-slide{
+        position: absolute;
+        display: none;
+    }    
+
+        .toggleBtn{
+            position: absolute;;
+            display: none;
+        }
+    
+        #footer .footer-txt{
+            height: 600px;
+        }
+        
+        #footer-txt-all{
+            position: relative;
+            overflow: hidden;
+            top: 50px;
+            left: 150px;
+            font-weight: lighter;
+        }
+    
+        #footer .footer-txt div p{
+            line-height: 35px;
+            font-size: 18px;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+    
+        #footer .footer-txt div a p{
+            line-height: 40px;
+            font-size: 18px;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+    
+        #footer-txt-all .office{
+            position: absolute;
+            float: left;
+            margin-left: 90px;
+            width: 650px;
+        }
+    
+        #footer-txt-all .menu{
+            position: absolute;
+            float: left;
+            margin-left: 90px;
+            width: 140px;
+            margin-top: 180px;
+        }
+        
+        #footer-txt-all .family{
+            position: absolute;
+            float: left;
+            left: 150px;
+            margin-left: 110px;
+            width: 80px;
+            margin-top: 180px;
+        }
+        
+        #footer-txt-all .career{
+            position: absolute;
+            float: left;
+            left:250px;
+            margin-left: 130px;
+            width: 80px;
+            margin-top: 180px;
+        }
+        
+        
+        #footer .footer-txt .sns{
+            margin-right: 0px;
+            width: 350px;
+            margin-top: 380px;
+        }
+        
+        #footer .footer-txt .sns a img{
+            float: right;
+            width: 60px;
+        }
 }
 
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
@@ -274,6 +447,102 @@ body{
         position: absolute;;
         display: none;
     }
+
+    .swiper-container.swiper-head-tab {
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .swiper-container.swiper-head-mob{
+        position: absolute;
+        display: none;
+    }
+    .swiper-head > .swiper-wrapper > .swiper-slide{
+        position: absolute;
+        display: none;
+    }
+
+        /* 푸터 */
+        #footer .footer-txt{
+            height: 600px;
+        }
+        
+        #footer-txt-all{
+            position: relative;
+            overflow: hidden;
+            top: 50px;
+            left: 70px;
+            font-weight: lighter;
+        }
+    
+        #footer .footer-txt div p{
+            line-height: 35px;
+            font-size: 18px;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+    
+        #footer .footer-txt div a p{
+            line-height: 37px;
+            font-size: 17px;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+    
+        #footer-txt-all .office{
+            position: absolute;
+            float: left;
+            margin-left: 15px;
+            width: 450px;
+        }
+    
+        #footer-txt-all .menu{
+            position: absolute;
+            float: left;
+            margin-left: 15px;
+            width: 140px;
+            margin-top: 180px;
+        }
+        
+        #footer-txt-all .family{
+            position: absolute;
+            float: left;
+            left: 150px;
+            margin-left: 15px;
+            width: 80px;
+            margin-top: 180px;
+        }
+        
+        #footer-txt-all .career{
+            position: absolute;
+            float: left;
+            left:250px;
+            margin-left: 15px;
+            width:80px;
+            margin-top: 180px;
+        }
+        
+        
+        #footer .footer-txt .sns{
+            float: left;
+            margin-left: 15px;
+            width: 650px;
+            margin-top: 450px;
+        }
+        
+        #footer .footer-txt .sns a img{
+            float: left;
+            width: 50px;
+        }
 
 }
 
@@ -317,11 +586,49 @@ body{
         text-align: center;
         display: none;
     }
+    
 
-    #header .swiper-container {
-        max-width: 100%;
-        height: auto;
-        top: 0;
+    .swiper-container.swiper-head-mob {
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    
+    .swiper-container.swiper-head-tab {
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+        
+    .swiper-head > .swiper-wrapper > .swiper-slide{
+        position: absolute;
+        display: none;
+    }
+    .swiper-container.swiper-head-tab {
+        position: absolute;
+        display: none;
     }
 
     #header .header-nav .header-logo img {
@@ -336,39 +643,6 @@ body{
 
     #header .header-img{
         display: none;
-    }
-    
-    #header > .swiper-container .swiper-head{
-        position: absolute;
-        display: none;
-    }
-    /* #header > .swiper-container > .swiper-head-moile {
-        position: absolute;
-        display: none;
-        width: 100%;
-    } */
-    
-
-    /* .swiper-head-moile {
-        width: 100%;
-        height: 100%;
-        top: 0;
-    } */
-    
-    .swiper-container.swiper-head-moile {
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
     }
 
     /* 푸터 */
@@ -400,14 +674,14 @@ body{
         position: absolute;
         float: left;
         margin-left: 10px;
-        width: 650px;
+        width: 350px;
     }
 
     #footer-txt-all .menu{
         position: absolute;
         float: left;
         margin-left: 10px;
-        width: 650px;
+        width: 120px;
         margin-top: 180px;
     }
     
@@ -416,7 +690,7 @@ body{
         float: left;
         left: 150px;
         margin-left: 10px;
-        width: 650px;
+        width: 60px;
         margin-top: 180px;
     }
     
@@ -425,7 +699,7 @@ body{
         float: left;
         left:250px;
         margin-left: 10px;
-        width: 650px;
+        width: 70px;
         margin-top: 180px;
     }
     

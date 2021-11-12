@@ -379,17 +379,145 @@ transition: .4s;
 
 /* PC (해상도 1024px)*/
 
+@media all and (min-width:1201px) and (max-width:1732px) {
+    
+}
+@media all and (min-width:1024px) and (max-width:1200px) {
+
+}
 @media all and (min-width:1024px) and (max-width:1480px) {
     
 }
 
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
 @media all and (min-width:768px) and (max-width:1023px) {
-    
+    #latest-news .news-frame .news-img img {
+        align-items: center;
+        width: 240px;
+    }
 }
 
 /* 모바일 가로, 모바일 세로 (해상도 ~ 767px)*/
 @media all and (max-width:767px) {
+
+    /* companies */
+    #companies .companies-text{
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Playfair Display', serif;
+        font-weight: bolder;
+        margin-top: 40px;
+    }
+    
+    #companies .companies-frame{
+        width: 1900px;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+
+    #companies .companies-frame .companies-img {
+        flex: 1;
+        margin: 0 1px;
+        height: 450px;
+    }
+    
+    #companies .companies-frame .font p {
+        font-size: 20px;
+    }
+
+
+    /* news */
+    #latest-news{
+        width: 600px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+    #latest-news .news-text p{
+        font-size: 30px;
+    }
+    
+    
+    #latest-news .news-frame .news-img {
+        float: left;
+        margin: 0 6px;
+        margin-top: 50px;
+    }
+
+    #latest-news .news-frame .news-img img {
+        align-items: center;
+        width: 230px;
+    }
+
+    #latest-news .news-txt{
+        overflow: hidden;
+    }
+    #latest-news .news-txt .news-menu li{
+        float: left;
+        margin: 0 10px;
+        margin-top: 50px;
+    }
+
+   
+    
+    
+    /* youtube */
+
+    #youtube{
+        background: url('../images/js.jpg');
+        background-size: cover;
+        width: 100%;
+        height: 700px;
+        overflow: hidden;
+        margin-top: 0;
+    }
+    
+    #youtube .youtube-text{
+        margin: 0 auto;
+        position: relative;
+        float: left;
+        left: 20px;
+        background-color:rgb(41, 79, 161);
+        width:450px;
+        height: 150px;
+        margin-top: 30px;
+        border-radius: 40px 40px 40px 40px;
+    }
+    
+    #youtube .youtube-text> p{
+        float: left;
+        line-height: 40px;
+        left: 50px;
+        font-family: 'Noto Sans KR', sans-serif;
+        color: rgb(255, 255, 255);
+    }
+    
+    #text-big {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 25px;
+    }
+    
+    #youtube .youtube-slide {
+        /* flex: 8; */
+        /* flex-basis: 700px; */
+        width: 1429px;
+        margin-top: 285px;
+        float: left;
+    }
+    
+    .youtube-button{
+        position: relative;
+        left: 250px;
+        top: 170px;
+    }
+    
+    .youtube-slide .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    
+    
     
     
 }

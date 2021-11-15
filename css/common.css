@@ -1,4 +1,4 @@
-                                               @charset "UTF-8";
+@charset "UTF-8";
 /* 초기화 */
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
@@ -27,17 +27,35 @@ body{
 
 #header .swiper-container {
     width: 100%;
-    height: 100%;
+    height: 807px;
     top: 0;
 }
 
-.swiper-head-mob  {
+/* .swiper-head-mob  {
     position: absolute;
     display: none;
 }
 .swiper-head-tab {
     position: absolute;
     display: none;
+} */
+
+.swiper-head .swiper-slide.slide1 {
+    background: url(../images/header-screen.jpg);
+    background-size: cover;
+    background-position:center;
+}
+
+.swiper-head .swiper-slide.slide2 {
+    background: url(../images/header-screen2.jpg);
+    background-size: cover;
+    background-position:center;
+}
+
+.swiper-head .swiper-slide.slide3 {
+    background: url(../images/header-screen3.jpg);
+    background-size: cover;
+    background-position:center;
 }
 
 #header .swiper-slide {
@@ -330,9 +348,8 @@ body{
 
 
 @media all and (min-width:1024px) and (max-width:1200px) {
-    .swiper-container.swiper-head-tab {
+    /* .swiper-container.swiper-head-tab {
         width: 100%;
-        /* Center slide text vertically */
         display: -webkit-box;
         display: -ms-flexbox;
         display: -webkit-flex;
@@ -354,7 +371,25 @@ body{
     .swiper-head > .swiper-wrapper > .swiper-slide{
         position: absolute;
         display: none;
-    }    
+    }     */
+
+    .swiper-head .swiper-slide.slide1 {
+        background: url(../images/screen-tablet1.jpg);
+        background-size: cover;
+        background-position:center;
+    }
+    
+    .swiper-head .swiper-slide.slide2 {
+        background: url(../images/screen-tablet2.jpg);
+        background-size: cover;
+        background-position:center;
+    }
+    
+    .swiper-head .swiper-slide.slide3 {
+        background: url(../images/screen-tablet3.jpg);
+        background-size: cover;
+        background-position:center;
+    }
 
         .toggleBtn{
             position: absolute;;
@@ -448,8 +483,7 @@ body{
         display: none;
     }
 
-    .swiper-container.swiper-head-tab {
-        /* Center slide text vertically */
+    /* .swiper-container.swiper-head-tab {
         display: -webkit-box;
         display: -ms-flexbox;
         display: -webkit-flex;
@@ -471,6 +505,24 @@ body{
     .swiper-head > .swiper-wrapper > .swiper-slide{
         position: absolute;
         display: none;
+    } */
+
+    .swiper-head .swiper-slide.slide1 {
+        background: url(../images/screen-tablet1.jpg);
+        background-size: cover;
+        background-position:center;
+    }
+    
+    .swiper-head .swiper-slide.slide2 {
+        background: url(../images/screen-tablet2.jpg);
+        background-size: cover;
+        background-position:center;
+    }
+    
+    .swiper-head .swiper-slide.slide3 {
+        background: url(../images/screen-tablet3.jpg);
+        background-size: cover;
+        background-position:center;
     }
 
         /* 푸터 */
@@ -588,8 +640,7 @@ body{
     }
     
 
-    .swiper-container.swiper-head-mob {
-        /* Center slide text vertically */
+    /* .swiper-container.swiper-head-mob {
         display: -webkit-box;
         display: -ms-flexbox;
         display: -webkit-flex;
@@ -606,7 +657,6 @@ body{
 
     
     .swiper-container.swiper-head-tab {
-        /* Center slide text vertically */
         display: -webkit-box;
         display: -ms-flexbox;
         display: -webkit-flex;
@@ -619,16 +669,34 @@ body{
         -ms-flex-align: center;
         -webkit-align-items: center;
         align-items: center;
-    }
+    } */
 
         
-    .swiper-head > .swiper-wrapper > .swiper-slide{
+    /* .swiper-head > .swiper-wrapper > .swiper-slide{
         position: absolute;
         display: none;
     }
     .swiper-container.swiper-head-tab {
         position: absolute;
         display: none;
+    } */
+
+    .swiper-head .swiper-slide.slide1 {
+        background: url(../images/screen-mobile1.jpg);
+        background-size: cover;
+        background-position:center;
+    }
+    
+    .swiper-head .swiper-slide.slide2 {
+        background: url(../images/screen-mobile2.jpg);
+        background-size: cover;
+        background-position:center;
+    }
+    
+    .swiper-head .swiper-slide.slide3 {
+        background: url(../images/screen-mobile3.jpg);
+        background-size: cover;
+        background-position:center;
     }
 
     #header .header-nav .header-logo img {

@@ -266,6 +266,37 @@ transition: .4s;
     overflow: hidden;
 }
 
+
+.swiper-recruit .swiper-slide.slide4 {
+    background: url(../images/recruit.jpg);
+    background-size: cover;
+    background-position:center;
+}
+
+.swiper-recruit .swiper-slide.slide5 {
+    background: url(../images/recruit2.jpg);
+    background-size: cover;
+    background-position:center;
+}
+
+.swiper-recruit .swiper-slide .slide6 {
+    background: url(../images/recruit3.jpg);
+    background-size: cover;
+    background-position:center;
+}
+
+.swiper-recruit .swiper-slide .slide7 {
+    background: url(../images/recruit4.jpg);
+    background-size: cover;
+    background-position:center;
+}
+
+.swiper-recruit .swiper-slide .slide8 {
+    background: url(../images/recruit5.jpg);
+    background-size: cover;
+    background-position:center;
+}
+
 #recruit .recruit-text{
     font-size: 50px;
     font-family: 'Playfair Display', serif;
@@ -274,15 +305,36 @@ transition: .4s;
     margin-left: 70px;
 }
 
+.swiper-container .swiper-recruit {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-recruit .swiper-slide {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+/* 
 #recruit #recruit-slide{
     width: 815px;
     float: left;
-}
+} */
 
-#recruit #recruit-slide .swiper-wrapper .swiper-slide .header_slide img {
+#recruit #recruit-slide .swiper-wrapper .swiper-slide img {
     border-radius: 10px;
 }
-#recruit #recruit-slide .swiper-wrapper .swiper-slide .header_slide img:hover{
+#recruit #recruit-slide .swiper-wrapper .swiper-slide img:hover{
     transform: scale( 1.1, 1.1 );
     transition: .2s;
 }
@@ -346,13 +398,23 @@ transition: .4s;
     cursor: pointer;
 }
 
-
 #contact .contact-img {
-    background: url('../images/contact.jpg');
+    background: url(../images/contact.jpg);
     background-size: cover;
+    background-position:center;
     width: 100%;
     height: 400px;
     margin-top: 80px;
+}
+/* 
+#contact .contact-img {
+    background: url('../images/contact.jpg');
+    background-size: cover;
+} */
+
+#contact .contact-img-mob {
+    position: absolute;
+    display: none;
 }
 
 #contact button {
@@ -379,22 +441,144 @@ transition: .4s;
 
 /* PC (해상도 1024px)*/
 
-@media all and (min-width:1201px) and (max-width:1732px) {
-    
-}
-@media all and (min-width:1024px) and (max-width:1200px) {
+@media all and (min-width:1371px) and (max-width:1800px) {
+    #companies .companies-frame{
+        display: flex;
+        width: 1350px;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
 
+    #companies .companies-frame .companies-img {
+        margin: 0 1px;
+        height: 450px;
+        flex-basis: 450px;
+    }
+
+    #companies .companies-frame .frame-txt  p{
+        text-align: center;
+        color: white;
+        line-height: 2;
+        margin-top: 300px;
+        font-size: 14px;
+    }
+
+    #contact button {
+        align-items: center;
+        display: inline-block;
+        float: right;
+        margin-right: 350px;
+        padding: 15px 40px;
+        border: 3px solid #ffffff;
+        background: #00000000 ;
+        color: #ffffff;
+        text-align: center; 
+        margin-top: 300px;
+    }
 }
-@media all and (min-width:1024px) and (max-width:1480px) {
+@media all and (min-width:1024px) and (max-width:1370px) {
     
+    #companies .companies-frame{
+        display: flex;
+        width: 960px;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+    #companies .companies-frame .frame-txt  p{
+        text-align: center;
+        color: white;
+        line-height: 2;
+        margin-top: 300px;
+        font-size: 14px;
+    }
+    
+    
+    #contact button {
+        align-items: center;
+        display: inline-block;
+        float: right;
+        margin-right: 150px;
+        padding: 15px 40px;
+        border: 3px solid #ffffff;
+        background: #00000000 ;
+        color: #ffffff;
+        text-align: center; 
+        margin-top: 300px;
+    }
+    
+    #contact button:hover {
+        background-color:#ffffff;
+        color:rgb(0, 0, 0);
+        transform: scale(1.1);
+        transition: .5s;
+    }
+
+    #contact .contact-img {
+        background: url(../images/contact-tab.jpg);
+        background-size: cover;
+        background-position:center;
+        width: 100%;
+        height: 600px;
+        margin-top: 80px;
+    }
 }
 
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
 @media all and (min-width:768px) and (max-width:1023px) {
+    
+
+    #companies .companies-frame{
+        display: flex;
+        width: 650px;
+        margin: 0 auto;
+        margin-top: 40px;
+        flex-wrap: wrap;
+    }
+
+    #companies .companies-frame .companies-img {
+        margin: 0 1px;
+        height: 450px;
+        flex-basis: 200px;
+    }
+
+    #companies .companies-frame .frame-txt  p{
+        text-align: center;
+        color: white;
+        line-height: 2;
+        margin-top: 280px;
+        font-size: 18px;
+    }
+    
+    
     #latest-news .news-frame .news-img img {
         align-items: center;
         width: 240px;
     }
+
+    #contact .contact-img {
+        background: url(../images/contact-mob.jpg);
+        background-size: cover;
+        background-position:center;
+        width: 100%;
+        height: 600px;
+        margin-top: 80px;
+    }
+
+    #contact button {
+        align-items: center;
+        display: inline-block;
+        margin-right: 80px;
+        padding: 15px 40px;
+        border: 3px solid #ffffff;
+        background: #00000000 ;
+        color: #ffffff;
+        text-align: center; 
+        margin-top: 440px;
+    }
+
+    
+
 }
 
 /* 모바일 가로, 모바일 세로 (해상도 ~ 767px)*/
@@ -410,25 +594,48 @@ transition: .4s;
     }
     
     #companies .companies-frame{
-        width: 1900px;
+        display: flex;
+        width: 450px;
         margin: 0 auto;
         margin-top: 40px;
+        flex-wrap: wrap;
     }
-
 
     #companies .companies-frame .companies-img {
-        flex: 1;
         margin: 0 1px;
         height: 450px;
+        flex-basis: 150px;
     }
     
+    #companies .companies-frame .frame-txt  p{
+        text-align: center;
+        color: white;
+        line-height: 2;
+        margin-top: 280px;
+        font-size: 18px;
+    }
+    
+    #companies .companies-frame p {
+        font-weight: 700;
+        text-align: center;
+        color: white;
+    }
     #companies .companies-frame .font p {
         font-size: 20px;
     }
 
+    #companies .companies-frame .companies-img.park {
+        position: absolute;
+        display: none;
+    }
+    #companies .companies-frame .companies-img.park:hover{
+        transform: scale( 1.02, 1.02 );
+        transition: .4s;
+        }
 
     /* news */
     #latest-news{
+        position: relative;
         width: 600px;
         margin: 0 auto;
         overflow: hidden;
@@ -475,9 +682,9 @@ transition: .4s;
     
     #youtube .youtube-text{
         margin: 0 auto;
-        position: relative;
+        /* position: relative; */
         float: left;
-        left: 20px;
+        margin-left: 10px;
         background-color:rgb(41, 79, 161);
         width:450px;
         height: 150px;
@@ -486,8 +693,6 @@ transition: .4s;
     }
     
     #youtube .youtube-text> p{
-        float: left;
-        line-height: 40px;
         left: 50px;
         font-family: 'Noto Sans KR', sans-serif;
         color: rgb(255, 255, 255);
@@ -516,7 +721,51 @@ transition: .4s;
         width: 100%;
         height: 100%;
     }
+ 
+    /* recruit */
+
+    #recruit .recruit-text{
+        font-size: 30px;
+        font-family: 'Playfair Display', serif;
+        font-weight: bolder;
+        margin-top: 80px;
+        margin-left: 70px;
+    }
     
+     /* contact */
+
+
+    #contact .contact-img {
+        background: url(../images/contact-mob.jpg);
+        background-size: cover;
+        background-position:center;
+        width: 100%;
+        height: 500px;
+        margin-top: 80px;
+    }
+
+    
+    #contact button {
+        align-items: center;
+        display: inline-block;
+        margin-right: 180px;
+        padding: 15px 40px;
+        border: 3px solid #ffffff;
+        background: #00000000 ;
+        color: #ffffff;
+        text-align: center; 
+        margin-top: 380px;
+    }
+    
+    #contact button:hover {
+        background-color:#ffffff;
+        color:rgb(0, 0, 0);
+        transform: scale(1.1);
+        transition: .5s;
+    }
+    
+
+
     
     
     

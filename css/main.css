@@ -119,9 +119,6 @@ transition: .4s;
 }
 
 
-
-
-
 #latest-news{
     width: 910px;
     margin: 0 auto;
@@ -266,35 +263,49 @@ transition: .4s;
     overflow: hidden;
 }
 
+#recruit .recruit_slide {
+    width: 815px;
+    float: left;
+}
+
+.swiper-recruit {
+    width: 100%;
+    height: 100%;
+}
 
 .swiper-recruit .swiper-slide.slide4 {
     background: url(../images/recruit.jpg);
     background-size: cover;
     background-position:center;
+    height: 210px;
 }
 
 .swiper-recruit .swiper-slide.slide5 {
     background: url(../images/recruit2.jpg);
     background-size: cover;
     background-position:center;
+    height: 210px;
 }
 
-.swiper-recruit .swiper-slide .slide6 {
+.swiper-recruit .swiper-slide.slide6 {
     background: url(../images/recruit3.jpg);
     background-size: cover;
     background-position:center;
+    height: 210px;
 }
 
-.swiper-recruit .swiper-slide .slide7 {
+.swiper-recruit .swiper-slide.slide7 {
     background: url(../images/recruit4.jpg);
     background-size: cover;
-    background-position:center;
+    background-position: center;
+    height: 210px;
 }
 
-.swiper-recruit .swiper-slide .slide8 {
+.swiper-recruit .swiper-slide.slide8 {
     background: url(../images/recruit5.jpg);
     background-size: cover;
-    background-position:center;
+    background-position: center;
+    height: 210px;
 }
 
 #recruit .recruit-text{
@@ -526,6 +537,52 @@ transition: .4s;
 
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
 @media all and (min-width:768px) and (max-width:1023px) {
+    #latest-news{
+        width: 710px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    #latest-news .news-text p{
+        font-size: 35px;
+    }
+
+    #latest-news .news-txt .news-menu li{
+        float: left;
+        margin: 0 5px;
+        margin-top: 50px;
+        font-size: 20px;
+    }
+
+    .news-img  img {
+        justify-content: center;
+        max-width: 200px;
+        max-height: 160px;
+    }
+    
+
+    #recruit #recruit_new{
+        display: flex;
+        justify-content: center;
+    }
+    
+
+    #recruit #recruit_btn1{
+        display: none;
+    }
+    
+    #recruit #recruit_btn2{
+        display: none;
+    }
+
+    #recruit{
+        width: 100%;
+    }
+    
+    /* #recruit .recruit_slide {
+        width: 815px;
+        float: left;
+    } */
     
 
     #companies .companies-frame{
@@ -583,6 +640,17 @@ transition: .4s;
 
 /* 모바일 가로, 모바일 세로 (해상도 ~ 767px)*/
 @media all and (max-width:767px) {
+    #recruit #recruit_btn1{
+        display: none;
+    }
+    
+    #recruit #recruit_btn2{
+        display: none;
+    }
+
+    #recruit{
+        width: 100%;
+    }
 
     /* companies */
     #companies .companies-text{
@@ -636,7 +704,7 @@ transition: .4s;
     /* news */
     #latest-news{
         position: relative;
-        width: 600px;
+        width: 495px;
         margin: 0 auto;
         overflow: hidden;
     }
@@ -659,15 +727,24 @@ transition: .4s;
 
     #latest-news .news-txt{
         overflow: hidden;
+        font-size: 25px;
     }
     #latest-news .news-txt .news-menu li{
         float: left;
-        margin: 0 10px;
+        margin: 0 5px;
         margin-top: 50px;
+        font-size: 15px;
     }
 
-   
+    .news-img  img {
+        justify-content: center;
+        max-width: 200px;
+        max-height: 160px;
+    }
     
+    #news-frame .news-img p{
+        font-size: 30px;
+    }
     
     /* youtube */
 
@@ -728,8 +805,59 @@ transition: .4s;
         font-size: 30px;
         font-family: 'Playfair Display', serif;
         font-weight: bolder;
-        margin-top: 80px;
-        margin-left: 70px;
+        margin-top: 60px;
+        margin-left: 180px;
+    } 
+
+    .swiper-recruit .swiper-slide.slide4 {
+        background: url(../images/recruit-mob.jpg);
+        background-size: cover;
+        background-position:center;
+        height: 210px;
+    }
+    
+    .swiper-recruit .swiper-slide.slide5 {
+        background: url(../images/recruit2-mob.jpg);
+        background-size: cover;
+        background-position:center;
+        height: 210px;
+    }
+    
+    .swiper-recruit .swiper-slide.slide6 {
+        background: url(../images/recruit3-mob.jpg);
+        background-size: cover;
+        background-position:center;
+        height: 210px;
+    }
+    
+    .swiper-recruit .swiper-slide.slide7 {
+        background: url(../images/recruit4-mob.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 210px;
+    }
+    
+    .swiper-recruit .swiper-slide.slide8 {
+        background: url(../images/recruit5-mob.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 210px;
+    }
+
+    
+    /* #recruit .recruit_slide {
+        width: 100%;
+        float: left;
+    } */
+    
+    .swiper-recruit {
+        width: 400px;
+        height: 200px;
+    }
+
+    #recruit #recruit_new{
+        display: flex;
+        justify-content: center;
     }
     
      /* contact */

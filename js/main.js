@@ -105,7 +105,7 @@ $('#next_youtube').click(function(){
 //     speed: 2500
 // });
 
-var swiper = new Swiper('.swiper-recruit .swiper-slide', {
+var swiperRecruit = new Swiper('.swiper-recruit', {
   mousewheel: false,
   keyboard: false,
   autoplay: {
@@ -130,7 +130,7 @@ const menu = document.querySelector('.header-menu li');
 
 toggleBtn.addEventListener('click', () => {
     menu.classList.toggle('active');
-    links.classList.toggle('active');
+    // links.classList.toggle('active');
 })
 
 

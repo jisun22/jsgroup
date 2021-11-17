@@ -169,17 +169,22 @@ transition: .4s;
     background-size: cover;
     width: 100%;
     height: 700px;
-    /* position: relative; */
-    /* display: flex; */
-    overflow: hidden;
+    overflow: visible;
     margin-top: 0;
 }
 
+#youtube .youtube-slide {
+    /* width: 1429px; */
+    width: 78%;
+    margin-top: 285px;
+    float: left;
+}
+
+
 #youtube .youtube-text{
-    /* position: absolute; */
     background-color:rgb(41, 79, 161);
-    /* top: 220px; */
-    width:474px;
+    /* width:474px; */
+    width: 22%;
     height: 400px;
     float: left;
     margin-top: 270px;
@@ -194,34 +199,32 @@ transition: .4s;
     left: 30px;
 }
 
+.tube-txt{
+    line-height: 50px;
+    width: 350px;
+}
+
 #text-big {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 35px;
 }
 
-#youtube .youtube-slide {
-    /* flex: 8; */
-    /* flex-basis: 700px; */
-    width: 1429px;
-    margin-top: 285px;
-    float: left;
-}
-
-
-
 .youtube-button{
     position: relative;
     left: 250px;
     top: 170px;
+    width: 130px ;
 }
 
-
-#test_prev_youtube:hover{
-    color: rgb(107, 106, 106);
+.youtube-button #prev_youtube:hover{
+    transform: scale( 1.1, 1.1 );
+    transition: .3s;
+    background-color: rgb(64, 116, 185);
 }
-
-#test_next_youtube:hover{
-    color: rgb(107, 106, 106);
+.youtube-button #next_youtube:hover{
+    transform: scale( 1.1, 1.1 );
+    transition: .3s;
+    background-color: rgb(64, 116, 185);
 }
 
 .youtube-slide .swiper-container {
@@ -253,9 +256,8 @@ transition: .4s;
     margin-left: 100px;
 }
 
-#youtube{
-    overflow: hidden;
-}
+
+/* recruit */
 
 #recruit{
     width: 980px;
@@ -271,6 +273,13 @@ transition: .4s;
 .swiper-recruit {
     width: 100%;
     height: 100%;
+}
+
+.swiper-recruit:hover{
+    cursor: pointer;
+    transform: scale( 1.01, 1.01 );
+    filter: brightness(95%); 
+    transition: .3s;
 }
 
 .swiper-recruit .swiper-slide.slide4 {
@@ -379,11 +388,9 @@ transition: .4s;
 }
 
 #prev_youtube:hover{
-    color: rgb(107, 106, 106);
     cursor: pointer;
 }
 #next_youtube:hover{
-    color: rgb(107, 106, 106);
     cursor: pointer;
 }
 
@@ -400,13 +407,15 @@ transition: .4s;
 }
 
 #recruit_prev:hover{
-    color: rgb(107, 106, 106);
     cursor: pointer;
+    transition: .3s;
+    background-color: rgb(64, 116, 185);
 }
 
 #recruit_next:hover{
-    color: rgb(107, 106, 106);
     cursor: pointer;
+    transition: .3s;
+    background-color: rgb(64, 116, 185);
 }
 
 #contact .contact-img {
@@ -551,13 +560,22 @@ transition: .4s;
         float: left;
         margin: 0 5px;
         margin-top: 50px;
-        font-size: 20px;
+        font-size: 17px;
+    }
+
+    .news-txt .news-menu li a:hover{
+        color:#B5DDEE;
+        font-size: 18px;
     }
 
     .news-img  img {
         justify-content: center;
         max-width: 200px;
         max-height: 160px;
+    }
+
+    .news-frame .news-img p{
+        font-size: 12px;
     }
     
 
@@ -578,12 +596,9 @@ transition: .4s;
     #recruit{
         width: 100%;
     }
-    
-    /* #recruit .recruit_slide {
-        width: 815px;
-        float: left;
-    } */
-    
+
+
+    /* companies */
 
     #companies .companies-frame{
         display: flex;
@@ -635,6 +650,54 @@ transition: .4s;
     }
 
     
+
+    /* #youtube .youtube-slide{
+        width: 650px;
+    }
+
+    .youtube-slide .swiper-wrapper{
+        right: 100px;
+    }
+
+    #youtube .youtube-text{
+        width: 200px;
+    }
+    
+    .youtube-slide .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    #youtube{
+        background: url('../images/js.jpg');
+        background-size: cover;
+        width: 100%;
+        height: 700px;
+        overflow: hidden;
+        margin-top: 0;
+    } */
+
+    #text-big {
+        font-size: 23px;
+    }
+
+    #text-small {
+        font-size: 15px;
+    }
+
+    .tube-txt{
+        line-height: 40px;
+        width: 150px;
+        margin-top: 10px;
+    }
+    
+    .youtube-button{
+        position: relative;
+        left: 40px;
+        top: 130px;
+    }
+
+
 
 }
 
@@ -704,7 +767,8 @@ transition: .4s;
     /* news */
     #latest-news{
         position: relative;
-        width: 495px;
+        width: 443px;
+        left: 20px;
         margin: 0 auto;
         overflow: hidden;
     }
@@ -731,21 +795,26 @@ transition: .4s;
     }
     #latest-news .news-txt .news-menu li{
         float: left;
-        margin: 0 5px;
+        margin: 0 3px;
         margin-top: 50px;
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .news-img  img {
         justify-content: center;
-        max-width: 200px;
+        max-width: 190px;
         max-height: 160px;
     }
     
-    #news-frame .news-img p{
-        font-size: 30px;
+    .news-frame .news-img p{
+        font-size: 12px;
     }
     
+    .news-txt .news-menu li a:hover{
+        color:#B5DDEE;
+        font-size: 15px;
+    }
+
     /* youtube */
 
     #youtube{
@@ -761,44 +830,57 @@ transition: .4s;
         margin: 0 auto;
         /* position: relative; */
         float: left;
-        margin-left: 10px;
+        margin-left: 20px;
         background-color:rgb(41, 79, 161);
         width:450px;
-        height: 150px;
-        margin-top: 30px;
+        height: 100px;
+        margin-top: 100px;
         border-radius: 40px 40px 40px 40px;
     }
     
-    #youtube .youtube-text> p{
+    #youtube .youtube-text  p{
         left: 50px;
         font-family: 'Noto Sans KR', sans-serif;
         color: rgb(255, 255, 255);
+        top: 0;
     }
     
     #text-big {
-        font-family: 'Noto Sans KR', sans-serif;
-        font-size: 25px;
+        font-size: 23px;
     }
-    
+
+    #text-small {
+        font-size: 15px;
+    }
+
+    .tube-txt{
+        line-height: 40px;
+        width: 280px;
+        margin-top: 10px;
+    }
     #youtube .youtube-slide {
-        /* flex: 8; */
-        /* flex-basis: 700px; */
-        width: 1429px;
-        margin-top: 285px;
-        float: left;
+        margin-top: 120px;
+        width: 100%;
     }
     
     .youtube-button{
         position: relative;
-        left: 250px;
-        top: 170px;
+        left: 170px;
+        top: 50px;
     }
+
+
     
     .youtube-slide .swiper-container {
         width: 100%;
         height: 100%;
     }
- 
+    
+    .youtube-slide .swiper-wrapper{
+        right: 95px;
+    }
+
+
     /* recruit */
 
     #recruit .recruit-text{

@@ -77,13 +77,37 @@ var swiperContent = new Swiper('.swiper-content', {
     spaceBetween: 5,
     autoplay: {
       delay: 3000
-  },
-    // centeredSlides: true,
-    // pagination: {
-    //   el: '.swiper-pagination',
-    //   clickable: true,
-    // },
-    // effect:'coverflow'
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 0
+      },
+      500: {
+        slidesPerView: 1,
+        spaceBetween: 0
+      },
+      720: {
+        slidesPerView: 2,
+        spaceBetween: 10
+      },
+      800: {
+        slidesPerView: 2,
+        spaceBetween: 15
+      },
+      820: {
+        slidesPerView: 2,
+        spaceBetween: 15
+      },
+      920: {
+        slidesPerView: 2,
+        spaceBetween: 15
+      },
+      1420: {
+        slidesPerView: 3,
+        spaceBetween: 2
+      }
+    }
 });
 
 $('#prev_youtube').click(function(){
@@ -94,20 +118,22 @@ $('#next_youtube').click(function(){
   swiperContent.slideNext();
 });
 
+// $(window).resize(function() {
+//   var winWidth = $(window).width();
+//   console.log(winWidth);
 
+//   if (winWidth < 1420) {
 
-// var swiperRecruit = new Swiper('.swiper-recruit', {
-//     mousewheel: false,
-//     keyboard: false,
-//     autoplay: {
-//         delay: 3000,
-//     },
-//     speed: 2500
+//   }
 // });
+
+
+
 
 var swiperRecruit = new Swiper('.swiper-recruit', {
   mousewheel: false,
   keyboard: false,
+  // verticalSwiping: true,
   autoplay: {
       delay: 3000,
   },
@@ -125,12 +151,16 @@ $('#recruit_next').click(function(){
 
 
 
-const toggleBtn = document.querySelector('.toggleBtn');
-const menu = document.querySelector('.header-menu li');
+// const toggleBtn = document.querySelector('.toggleBtn');
+// const menu = document.querySelector('.header-menu li');
 
-toggleBtn.addEventListener('click', () => {
-    menu.classList.toggle('active');
-    // links.classList.toggle('active');
-})
+// toggleBtn.addEventListener('click', () => {
+//     menu.classList.toggle('active');
+//     // links.classList.toggle('active');
+// })
 
-
+// $(document).ready(function(){
+//   $(".toggleBtn").click(function(){
+//       $(".header-menu li").slideToggle(1000)
+//   })
+// })

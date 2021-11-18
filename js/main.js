@@ -91,18 +91,36 @@ var swiperContent = new Swiper('.swiper-content', {
         slidesPerView: 2,
         spaceBetween: 10
       },
+
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 100
+      },
+
       800: {
         slidesPerView: 2,
-        spaceBetween: 15
+        spaceBetween: 100
       },
       820: {
+        slidesPerView: 2,
+        spaceBetween: 100
+      },
+
+      880: {
         slidesPerView: 2,
         spaceBetween: 15
       },
       920: {
         slidesPerView: 2,
-        spaceBetween: 15
+        spaceBetween: 30
       },
+
+      1350: {
+        slidesPerView: 3,
+        spaceBetween: 10
+      },
+      
+
       1420: {
         slidesPerView: 3,
         spaceBetween: 2

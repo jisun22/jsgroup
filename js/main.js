@@ -20,10 +20,10 @@ $(function(){
 
 $(document).ready(function(){
   $("#num > li").mouseover(function(){
-      $(this).children(".sub").stop().slideDown(350);
+      $(this).children(".sub").stop().slideDown(380);
   });
   $("#num > li").mouseleave(function(){
-      $(this).children(".sub").stop().slideUp(350);
+      $(this).children(".sub").stop().slideUp(300);
   });
   // speed: 2500
 });
@@ -76,8 +76,9 @@ var swiperContent = new Swiper('.swiper-content', {
     slidesPerView: 3,
     spaceBetween: 5,
     autoplay: {
-      delay: 3000
-    },
+      delay: 2000,
+  },
+    speed: 3000,
     breakpoints: {
       320: {
         slidesPerView: 1,
@@ -136,16 +137,6 @@ $('#next_youtube').click(function(){
   swiperContent.slideNext();
 });
 
-// $(window).resize(function() {
-//   var winWidth = $(window).width();
-//   console.log(winWidth);
-
-//   if (winWidth < 1420) {
-
-//   }
-// });
-
-
 
 
 var swiperRecruit = new Swiper('.swiper-recruit', {
@@ -169,16 +160,15 @@ $('#recruit_next').click(function(){
 
 
 
-// const toggleBtn = document.querySelector('.toggleBtn');
-// const menu = document.querySelector('.header-menu li');
+const toggleBtn = document.querySelector('.toggleBtn');
+const menu = document.querySelector('.header-menu > #num > li > a');
 
-// toggleBtn.addEventListener('click', () => {
-//     menu.classList.toggle('active');
-//     // links.classList.toggle('active');
-// })
+toggleBtn.addEventListener('click', () => {
+    menu.classList.toggle('active');
+})
 
-// $(document).ready(function(){
-//   $(".toggleBtn").click(function(){
-//       $(".header-menu li").slideToggle(1000)
-//   })
-// })
+$(document).ready(function(){
+  $(".toggleBtn").click(function(){
+      $(".header-menu > #num > li > a").slideToggle(1000)
+  })
+})

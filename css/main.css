@@ -495,6 +495,28 @@ transition: .4s;
         text-align: center; 
         margin-top: 300px;
     }
+
+    #text-big {
+        font-size: 30px;
+    }
+
+    #text-small {
+        margin-right: 10px;
+        font-size: 20px;
+        width: 200px;
+    }
+
+    .tube-txt{
+        line-height: 40px;
+        width: 150px;
+        margin-top: 10px;
+    }
+    
+    .youtube-button{
+        position: relative;
+        left: 50px;
+        top: 130px;
+    }
 }
 @media all and (min-width:1024px) and (max-width:1370px) {
     
@@ -541,6 +563,28 @@ transition: .4s;
         width: 100%;
         height: 600px;
         margin-top: 80px;
+    }
+
+    #text-big {
+        font-size: 26px;
+    }
+
+    #text-small {
+        margin-right: 10px;
+        font-size: 16px;
+        width: 150px;
+    }
+
+    .tube-txt{
+        line-height: 40px;
+        width: 150px;
+        margin-top: 10px;
+    }
+    
+    .youtube-button{
+        position: relative;
+        left: 30px;
+        top: 130px;
     }
 }
 
@@ -677,12 +721,16 @@ transition: .4s;
         margin-top: 0;
     } */
 
+    
+
     #text-big {
         font-size: 23px;
     }
 
     #text-small {
-        font-size: 15px;
+        margin-right: 10px;
+        font-size: 14px;
+        width: 135px;
     }
 
     .tube-txt{
@@ -693,7 +741,7 @@ transition: .4s;
     
     .youtube-button{
         position: relative;
-        left: 40px;
+        left: 30px;
         top: 130px;
     }
 
@@ -828,14 +876,12 @@ transition: .4s;
     
     #youtube .youtube-text{
         margin: 0 auto;
-        /* position: relative; */
-        float: left;
-        margin-left: 20px;
+        margin-left: 0px;
         background-color:rgb(41, 79, 161);
-        width:450px;
+        width:740px;
         height: 100px;
         margin-top: 100px;
-        border-radius: 40px 40px 40px 40px;
+        border-radius: 0px 0px 0px 0px;
     }
     
     #youtube .youtube-text  p{
@@ -865,7 +911,7 @@ transition: .4s;
     
     .youtube-button{
         position: relative;
-        left: 170px;
+        left: 10px;
         top: 50px;
     }
 

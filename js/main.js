@@ -172,3 +172,35 @@ $(document).ready(function(){
       $(".header-menu > #num > li > a").slideToggle(1000)
   })
 })
+
+
+$('.toggleBtn').click(function(){
+  if($("#mobile_hamburger").is(":visible")) {  
+    /* 모바일 전체 메뉴 show */
+    $("#header .mobile_menu").show();
+    $("#mobile_close").show();
+    $("#mobile_hamburger").hide();
+
+    $(".swiper-head").hide();
+    $("#companies").hide();
+    $("#latest-news").hide();
+    $("#youtube").hide();
+    $("#recruit").hide();
+    $("#contact").hide();
+    $("#footer").hide();  
+  } else {
+    /* 모바일 전체 메뉴 hide */
+    $("#header .mobile_menu").hide();
+    $("#mobile_close").hide();
+    $("#mobile_hamburger").show();
+
+    $(".swiper-head").show();
+    $("#companies").show();
+    $("#latest-news").show();
+    $("#youtube").show();
+    $("#recruit").show();
+    $("#contact").show();
+    $("#footer").show();  
+  }
+});
+

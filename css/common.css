@@ -132,6 +132,10 @@ body{
     right: 50px;
 }
 
+#search_mob > li > a > i{
+    display: none;
+}
+
 
 .header-menu > #num > li > a:hover{
     opacity: 120;
@@ -152,7 +156,7 @@ body{
     display: none;
     position: absolute;
     z-index: 1;
-    width: 140px;
+    width: 130px;
     height: auto;
     background: rgb(255, 255, 255);
     opacity: 0.8;  
@@ -254,6 +258,11 @@ body{
 /*미디어  */
 
 @media all and (min-width:1201px) and (max-width:1732px) {
+
+    #num .sub {
+        width: 130px;
+    }
+
     #footer .footer-txt{
         height: 600px;
     }
@@ -327,6 +336,11 @@ body{
 
 
 @media all and (min-width:1024px) and (max-width:1200px) {
+
+    #num .sub {
+        width: 130px;
+    }
+
     .swiper-head .swiper-slide.slide1 {
         background: url(../images/screen-tablet1.jpg);
         background-size: cover;
@@ -442,14 +456,14 @@ body{
         display: none;
         position: absolute;
         z-index: 1;
-        width: 140px;
+        width: 120px;
         height: auto;
         background: rgb(255, 255, 255);
         opacity: 0.8;  
     }
     
     #num .sub li a{
-        font-size: 14px;
+        font-size: 12px;
     }
     
     #header .header-nav .header-logo img {
@@ -462,6 +476,12 @@ body{
         color: white;
         font-family: 'Ubuntu', sans-serif;
     }
+
+    .header-menu #num > li > a{
+        font-size: 15px;
+        padding: 10px 20px 10px 20px;
+    }
+
     .toggleBtn{
         position: absolute;;
         display: none;
@@ -560,14 +580,18 @@ body{
 
 /* 모바일 가로, 모바일 세로 (해상도 ~ 767px)*/
 @media all and (max-width:767px) {
-    #num .sub{
-        position: absolute;
+    #num > .sub > li > a{
         display: none;
     }
 
-    #num .sub > li a{
-        position: absolute;
+    #num .sub {
         display: none;
+        position: absolute;
+        z-index: 1;
+        width: 130px;
+        height: auto;
+        background: rgb(255, 255, 255);
+        opacity: 0;  
     }
 
     .header{
@@ -597,10 +621,14 @@ body{
         flex-direction: column;
         align-items: center;
         width: 100%;
+        position: relative;
+        top: 80px;
+        margin-top: 10px;
     }
 
     .header-menu > #num > li{
         padding: 5px 15px;
+        display: flex;
     }
 
 
@@ -608,6 +636,12 @@ body{
         width: 100%;
         text-align: center;
         display: none;
+    }
+
+    #search_mob > li > a > i{
+        align-items: center;
+        color: white;
+        display: flex;
     }
     
 
@@ -715,3 +749,79 @@ body{
     }
 }
 
+@media all and (min-width:320px) and (max-width:490px) {
+        /* 푸터 */
+        #footer .footer-txt{
+            height: 600px;
+        }
+        
+        #footer-txt-all{
+            position: relative;
+            overflow: hidden;
+            top: 50px;
+            left: 0px;
+            font-weight: lighter;
+        }
+    
+        #footer .footer-txt div p{
+            line-height: 30px;
+            font-size: 12px;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+    
+        #footer .footer-txt div a p{
+            line-height: 30px;
+            font-size: 12px;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+    
+        #footer-txt-all .office{
+            position: absolute;
+            float: left;
+            margin-left: 10px;
+            width: 340px;
+        }
+    
+        #footer-txt-all .menu{
+            position: absolute;
+            float: left;
+            margin-left: 10px;
+            width: 120px;
+            margin-top: 180px;
+        }
+        
+        #footer-txt-all .family{
+            position: absolute;
+            float: left;
+            left: 150px;
+            margin-left: 10px;
+            width: 60px;
+            margin-top: 180px;
+        }
+        
+        #footer-txt-all .career{
+            position: absolute;
+            float: left;
+            left:250px;
+            margin-left: 10px;
+            width: 70px;
+            margin-top: 180px;
+        }
+        
+        
+        #footer .footer-txt .sns{
+            float: left;
+            margin-left: 10px;
+            width: 350px;
+            margin-top: 450px;
+        }
+        
+        #footer .footer-txt .sns a img{
+            float: left;
+            width: 50px;
+        }
+
+        #footer .footer-txt h5{
+            Font-size: 15px;
+        }
+}

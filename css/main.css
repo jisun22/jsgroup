@@ -1026,3 +1026,98 @@ transition: .4s;
     
     
 }
+
+@media all and (min-width:320px) and (max-width:490px) {
+    #companies .companies-frame{
+        display: flex;
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 40px;
+        flex-wrap: wrap;
+    }
+
+    #companies .companies-frame .companies-img {
+        margin: 0 1px;
+        height: 450px;
+        flex-basis: 500px;
+    }
+    
+    #companies .companies-frame .frame-txt  p{
+        text-align: center;
+        color: white;
+        line-height: 2;
+        margin-top: 280px;
+        font-size: 18px;
+    }
+    
+    #companies .companies-frame p {
+        font-weight: 700;
+        text-align: center;
+        color: white;
+    }
+    #companies .companies-frame .font p {
+        font-size: 20px;
+    }
+
+    #companies .companies-frame .companies-img.park {
+        position: absolute;
+        display: none;
+    }
+    #companies .companies-frame .companies-img.park:hover{
+        transform: scale( 1.02, 1.02 );
+        transition: .4s;
+        }
+
+    /* news */
+    #latest-news{
+        position: relative;
+        width: 290px;
+        left: 20px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+    #latest-news .news-text p{
+        font-size: 30px;
+    }
+    
+    
+    #latest-news .news-frame .news-img {
+        float: left;
+        margin: 0 6px;
+        margin-top: 50px;
+    }
+
+    #latest-news .news-frame .news-img img {
+        align-items: center;
+        width: 230px;
+    }
+
+    #latest-news .news-txt{
+        overflow: hidden;
+        font-size: 20spx;
+        width: 280px;
+        line-height: 10px;
+    }
+    #latest-news .news-txt .news-menu li{
+        float: left;
+        margin: 0 3px;
+        margin-top: 50px;
+        font-size: 14px;
+    }
+
+    .news-img  img {
+        justify-content: center;
+        max-width: 190px;
+        max-height: 160px;
+    }
+    
+    .news-frame .news-img p{
+        font-size: 12px;
+    }
+    
+    .news-txt .news-menu li a:hover{
+        color:#B5DDEE;
+        font-size: 15px;
+    }
+}

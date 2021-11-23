@@ -180,7 +180,11 @@ $('.toggleBtn').click(function(){
     $("#header .mobile_menu").show();
     $("#mobile_close").show();
     $("#mobile_hamburger").hide();
-
+    $("#num .sub li a").hide();
+    $("#num .sub").hide();
+    
+    $("#num .sub").hide();
+    $("#num .sub li a").hide();
     $(".swiper-head").hide();
     $("#companies").hide();
     $("#latest-news").hide();
@@ -191,9 +195,14 @@ $('.toggleBtn').click(function(){
   } else {
     /* 모바일 전체 메뉴 hide */
     $("#header .mobile_menu").hide();
+    $("#search_mob").hide();   
     $("#mobile_close").hide();
     $("#mobile_hamburger").show();
+    $("#num .sub li a").hide();
+    $("#num .sub").hide();
 
+    $("#num .sub").hide();
+    $("#num .sub li a").hide();
     $(".swiper-head").show();
     $("#companies").show();
     $("#latest-news").show();
